@@ -134,8 +134,15 @@ public class app {
 
             if (Flag == 1)
             {
-                String romanNumber = Converter.convertToRoman(OutData);
-                System.out.println(romanNumber);
+                if (OutData > 0)
+                {
+                    String romanNumber = Converter.convertToRoman(OutData);
+                    System.out.println(romanNumber);
+                }
+                else
+                {
+                    System.out.println("Програма DIE бекоз, в римской системе нет отрицательных чисел, сорри.");
+                }
 
 
             }
